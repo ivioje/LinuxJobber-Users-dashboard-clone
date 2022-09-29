@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 0 100px 0 100px;
+    height: 75px;
+}
+.logo {
+    width: 158px;
+    height: 40px;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.classroom_prof {
+    font-size: 25px;
+}
