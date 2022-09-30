@@ -1,3 +1,7 @@
+main {
+    display: flex;
+}
+
 .profile_container {
     width: 400px;
     display: flex;

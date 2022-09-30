@@ -1,0 +1,74 @@
+.container_1 {
+    padding: 8rem 0rem 0rem 2rem;
+    width: 659px;
+    height: auto;
+}
+
+.container_1 form {
+    padding: 3rem 5rem 3rem 5rem;
+    width: 650px;
+    height: auto;
+    font-size: 20px;
+    color: #30302E;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 29px #F0F3FF;
+    border-radius: 35px;
+}
+
+.items div,
+.course {
+    margin: 1rem 0 1.5rem 2rem;
+}
+
+.items span {
+    margin-right: 1rem;
+    color: #CC4174;
+}
+
+.course {
+    height: 51px;
+    width: 461px;
+    background: #F1F3FD;
+    border-radius: 17px;
+    outline: none;
+    border: 1px solid #F1F3FD;
+    padding: 2px;
+}
+
+.items input::placeholder {
+    padding-left: 15px;
+    font-size: 17px;
+}
+
+.items div button {
+    width: 88px;
+    height: 53px;
+    text-align: center;
+    background: #F1F3FD;
+    color: #002851;
+    border: 1px solid #F1F3FD;
+    margin: .2rem 1rem 1rem 0rem;
+    border-radius: 17px;
+}
+.sub_item {
+    display: flex;
+    margin-left: 0rem !important;
+}
+.course-1, .course-2{
+    width: auto;
+}
+::placeholder{
+    font-size: 15px !important;
+}
+.course-1 {
+    width: 224px;
+}
+.course-2 {
+    width: 299px;
+}
+.show {
+    display: block;
+}
+.hide {
+    visibility: hidden;
+}
