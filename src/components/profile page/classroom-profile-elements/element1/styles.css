@@ -1,13 +1,14 @@
 .container_1 {
-    padding: 8rem 0rem 0rem 2rem;
+    padding: 7rem 0rem 0rem 2rem;
     width: 659px;
     height: auto;
+    margin-bottom: 5rem;
 }
 
-.container_1 form {
+.form {
     padding: 3rem 5rem 3rem 5rem;
     width: 650px;
-    height: auto;
+    height: 700px;
     font-size: 20px;
     color: #30302E;
     background: #FFFFFF;
@@ -50,25 +51,29 @@
     margin: .2rem 1rem 1rem 0rem;
     border-radius: 17px;
 }
-.sub_item {
-    display: flex;
-    margin-left: 0rem !important;
+.m0 {
+    display: flex !important;
 }
-.course-1, .course-2{
-    width: auto;
+.m3 {
+    padding: 1.5rem 0 0 4rem;
 }
+.m3 p {
+    margin-bottom: 1rem;
+}
+.m1 input {
+    width: 224px !important;
+}
+
 ::placeholder{
     font-size: 15px !important;
 }
-.course-1 {
-    width: 224px;
-}
-.course-2 {
-    width: 299px;
+.items small {
+    color: #CC4174;
 }
 .show {
     display: block;
+    margin-left: 0rem !important;
 }
 .hide {
-    visibility: hidden;
+    display: none;
 }
