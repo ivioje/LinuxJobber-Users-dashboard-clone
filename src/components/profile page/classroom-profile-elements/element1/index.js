@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
-import './styles.css'
+import './styles.css';
+import { Check, Clear } from '@mui/icons-material';
 
 const Questions1 = () => {
   const [value1, setValue1] = useState('');
   const [value2, setValue2] = useState('');
   const [value3, setValue3] = useState('');
+  const [value4, setValue4] = useState('');
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(false);
+  const [isOpen4, setIsOpen4] = useState(false);
 
 
-  const updateVal1 = (e) => {
+  const updateVal1 = e => {
     setValue1(e.target.innerText);
     if (e.target.innerText === 'Yes') {
       setIsOpen1(true)
@@ -19,22 +22,27 @@ const Questions1 = () => {
     }
   }
 
-  const updateVal2 = (e) => {
+  const updateVal2 = e => {
     setValue2(e.target.innerText);
-    if (e.target.innerText === 'Yes') {
+    if (e.target.innerText === 'No') {
       setIsOpen2(true)
     } else {
       setIsOpen2(false)
     }
   }
 
-  const updateVal3 = (e) => {
+  const updateVal3 = e => {
     setValue3(e.target.innerText)
     if (e.target.innerText === 'Yes') {
       setIsOpen3(true)
     } else {
       setIsOpen3(false)
     }
+  }
+
+  const updateVal4 = e => {
+    setValue4(e.target.innerText)
+    setIsOpen4(true)
   }
 
 
@@ -47,7 +55,9 @@ const Questions1 = () => {
         </div>
 
         <div className='items'>
-          <p> <span>2.</span> Are you a student? <small>{value1}</small></p>
+          <p> <span>2.</span> Are you a student?
+            {value1 === 'Yes' ? <div className='yesVal'><i> <Check /></i> {value1}</div> : (value1 === 'No' ? <div className='noVal'><Clear /> {value1}</div> : '')}
+          </p>
           <div className={isOpen1 ? 'hide' : ''}>
             <button onClick={updateVal1}>Yes</button>
             <button onClick={updateVal1}>No</button>
@@ -59,7 +69,9 @@ const Questions1 = () => {
         </div>
 
         <div className='items'>
-          <p><span>3.</span>Did you graduate? <small>{value2}</small></p>
+          <p><span>3.</span>Did you graduate?
+            {value2 === 'Yes' ? <div className='yesVal'><i> <Check /></i> {value2}</div> : (value2 === 'No' ? <div className='noVal'><Clear /> {value2}</div> : '')}
+          </p>
           <div className={isOpen2 ? 'hide' : ''}>
             <button onClick={updateVal2}>Yes</button>
             <button onClick={updateVal2}>No</button>
@@ -70,16 +82,25 @@ const Questions1 = () => {
         </div>
 
         <div className='items'>
-          <p><span>4.</span>Does your country require post-graduation service? <small>{value3}</small></p>
+          <p><span>4.</span>Does your country require post-graduation service?
+            {value3 === 'Yes' ? <div className='yesVal'><i> <Check /></i> {value3}</div> : (value3 === 'No' ? <div className='noVal'><Clear /> {value3}</div> : '')}
+          </p>
           <div className={isOpen3 ? 'hide' : ''}>
             <button onClick={updateVal3}>Yes</button>
             <button onClick={updateVal3}>No</button>
           </div>
           <div className={isOpen3 ? 'show m3' : 'hide '}>
-            <p>Have you completed?</p>
-            <button onClick={updateVal3}>Yes</button>
-            <button onClick={updateVal3}>No</button>
+            <p>Have you completed?
+              {value4 === 'Yes' ? <div className='yesVal'><i> <Check /></i> {value4}</div> : (value4 === 'No' ? <div className='noVal'><Clear /> {value4}</div> : '')}
+            </p>
+            <section className='m0'>
+              <button className={isOpen4 ? 'show_btn' : 'show_btn'} onClick={updateVal4}>Yes</button>
+              <button className={isOpen4 ? 'show_btn' : 'show_btn'} onClick={updateVal4}>No</button>
+            </section>
           </div>
+          <section className={isOpen4 ? 'next_btn' : 'hide'} >
+            <button className='btn'>Next step</button>
+          </section>
         </div>
 
       </div>

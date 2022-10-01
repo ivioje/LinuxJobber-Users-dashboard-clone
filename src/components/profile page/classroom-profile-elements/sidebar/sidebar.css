@@ -30,7 +30,7 @@ main {
     width: 39px;
     height: 39px;
     left: 175px;
-    top: 435px;
+    top: 505px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -59,7 +59,7 @@ main {
 
 .links div p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
     width: 103px;
     color: #30302E;

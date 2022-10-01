@@ -44,7 +44,6 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <Questions1 />
     </main>
   )
 }
