@@ -1,18 +1,25 @@
 import './App.css';
 import Navbar from './components/nav/Nav';
-import Questions1 from './components/profile page/classroom-profile-elements/element1';
-import Sidebar from './components/profile page/classroom-profile-elements/sidebar/sidebar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './components/home/Home';
+import Interest from './components/interest/Interest';
+import Sidebar from './components/sidebar/sidebar'
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <div className='components'>
-        <Sidebar />
-        <Questions1 />
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <div className='components'>
+        
+        <Routes>
+            <Route exact path='/' element={<Home />} />
+            <Route path='/level-of-interest' element={<Interest />} />
+        </Routes>
+        </div>
       </div>
-    </div>
-  );
+    </BrowserRouter>
+  )
 }
 
 export default App;

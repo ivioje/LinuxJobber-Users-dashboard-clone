@@ -1,0 +1,11 @@
+.interest_layout {
+    display: flex;
+}
+
+/* .sliders {
+    width: 300px;
+}*/
+
+.slider {
+    color: linear-gradient(90deg, #800165 0%, #D3014E 100%) !important;
+} 

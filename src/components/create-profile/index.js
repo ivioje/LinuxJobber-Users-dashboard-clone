@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './styles.css';
 import { Check, Clear } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
-const Questions1 = () => {
+const CreateProfile = () => {
   const [value1, setValue1] = useState('');
   const [value2, setValue2] = useState('');
   const [value3, setValue3] = useState('');
@@ -99,7 +100,7 @@ const Questions1 = () => {
             </section>
           </div>
           <section className={isOpen4 ? 'next_btn' : 'hide'} >
-            <button className='btn'>Next step</button>
+          <Link to='/level-of-interest'><button className='btn'>Next step</button></Link>
           </section>
         </div>
 
@@ -109,4 +110,4 @@ const Questions1 = () => {
   )
 }
 
-export default Questions1
+export default CreateProfile

@@ -1,5 +1,5 @@
 import React from 'react';
-import me from '../../../../static/assets/me.jpg';
+import me from '../../static/assets/me.jpg';
 import './sidebar.css';
 import {
   CameraAltOutlined,
@@ -9,7 +9,6 @@ import {
   Check,
   LogoutOutlined
 } from '@mui/icons-material';
-import Questions1 from '../element1';
 
 const Sidebar = () => {
   return (
@@ -43,7 +42,6 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-
     </main>
   )
 }
